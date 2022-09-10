@@ -33,7 +33,7 @@ export default function Email() {
         subject: subject,
         text: notification
       }
-      axios.post(process.env.REACT_APP_API_ENDPOINT, {
+      axios.post('http://localhost:8000/api/v1/send', {
         platform: 'email',
         method: 'sendMsg',
         custom: data
