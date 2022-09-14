@@ -6,10 +6,6 @@ COPY package*.json ./
 
 RUN npm install
 
-ARG API_ENDPOINT
-
-ENV API_ENDPOINT $API_ENDPOINT
-
 COPY . .
 
 EXPOSE 3000:3000
