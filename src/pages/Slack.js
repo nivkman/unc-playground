@@ -24,7 +24,7 @@ export default function Slack() {
         send_url: sendUrl,
         notification
       }
-      axios.post('http://localhost:9090/api/v1/send', {
+      axios.post(process.env.API_ENDPOINT, {
         platform: 'slack',
         method: 'sendMsg',
         custom: data

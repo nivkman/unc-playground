@@ -27,7 +27,7 @@ export default function Telegram() {
                 chat_id: chatId,
                 notification
             }
-            axios.post('http://localhost:9090/api/v1/send', {
+            axios.post(process.env.API_ENDPOINT, {
                 platform: 'telegram',
                 method: 'sendMsg',
                 custom: data
