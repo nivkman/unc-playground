@@ -10,9 +10,10 @@ export default function App() {
     return (
         <BrowserRouter>
             <Routes>
-                <Route path="/telegram" element={<Layout content={<Telegram/>} platform="Telegram" />} />
-                <Route path="/slack" element={<Layout content={<Slack/>} platform="Slack" />} />
-                <Route path="/email" element={<Layout content={<Email/>} platform="Email" />} />
+                <Route path="/" element={<Layout content={<Slack />} platform="Slack" />} />
+                <Route path="/telegram" element={<Layout content={<Telegram />} platform="Telegram" />} />
+                <Route path="/slack" element={<Layout content={<Slack />} platform="Slack" />} />
+                <Route path="/email" element={<Layout content={<Email />} platform="Email" />} />
 
             </Routes>
         </BrowserRouter>
