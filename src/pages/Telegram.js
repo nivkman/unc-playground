@@ -27,7 +27,7 @@ export default function Telegram() {
                 chat_id: chatId,
                 notification
             }
-            axios.post(process.env.API_ENDPOINT, {
+            axios.post(process.env.REACT_APP_API_ENDPOINT, {
                 platform: 'telegram',
                 method: 'sendMsg',
                 custom: data
