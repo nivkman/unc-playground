@@ -85,8 +85,8 @@ export default function Layout({content, platform}) {
                     <div className="flex flex-shrink-0 items-center px-4">
                       <img
                         className="h-8 w-auto"
-                        src="https://cdn-icons-png.flaticon.com/512/1163/1163482.png"
-                        alt="Your Company"
+                        src="https://cdn-icons-png.flaticon.com/512/2526/2526196.png"
+                        alt="UNC"
                       />
                     </div>
                     <nav className="mt-5 space-y-1 px-2">
@@ -101,7 +101,6 @@ export default function Layout({content, platform}) {
                             'group flex items-center px-2 py-2 text-base font-medium rounded-md'
                           )}
                         >
-                          <FontAwesomeIcon icon={['fab', 'apple']} />
                           {item.name}
                         </a>
                       ))}

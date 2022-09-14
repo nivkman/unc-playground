@@ -56,7 +56,7 @@ export default function Telegram() {
         <div>
             {status ? status === 1 ? <Success msg='Notification has been sent successfully' /> : status === 2 ? <Error msg='Could not send notification' /> : null : null}
             <section className='mt-5'>
-                <div className='grid gap-4 h-96 p-5 rounded-lg border-4 border-dashed border-gray-200'>
+                <div className='grid gap-4 p-5 rounded-lg border-4 border-dashed border-gray-200'>
                     <Input
                         labelText='Token'
                         name='token'
@@ -87,8 +87,8 @@ export default function Telegram() {
             </section>
             <section className='mt-20 p-4'>
                 <Example platform='Telegram' args={[
-                    { title: 'Token', example: '1241160304:AAF2Uef7PMFYCSLqNAEU42OwHtQhAWTrZvk' },
-                    { title: 'Chat ID', example: '1769398093' },
+                    { title: 'Token', example: '*****-*****-*****-*****-*****' },
+                    { title: 'Chat ID', example: '**********' },
                     { title: 'Notification', example: 'Hello DevOps Class' }
                 ]} />
             </section>
