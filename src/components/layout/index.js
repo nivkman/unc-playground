@@ -16,7 +16,7 @@ import {
 } from '@heroicons/react/24/outline'
 
 const navigation = [
-  { name: 'Slack', href: '/slack', icon: faSlack, current: true },
+  { name: 'Slack', href: '/slack', icon: faSlack, current: false },
   { name: 'Email', href: '/email', icon: faMailBulk, current: false },
   { name: 'Telegram', href: '/telegram', icon: faTelegram, current: false },
   { name: 'Team', href: '#', icon: faMicrosoft, current: false },
@@ -28,8 +28,10 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
 
-export default function Layout({content}) {
-  const [sidebarOpen, setSidebarOpen] = useState(false)
+export default function Layout({content, platform}) {
+  const [sidebarOpen, setSidebarOpen] = useState(false);
+
+  (navigation.filter(link => link.name === platform))[0].current = true;
 
   return (
     <>
@@ -205,7 +207,7 @@ export default function Layout({content}) {
           <main className="flex-1">
             <div className="py-6">
               <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-                <h1 className="text-2xl font-semibold text-gray-900">Dashboard</h1>
+                <h1 className="text-2xl font-semibold text-gray-900">Send Notification to <span className='text-indigo-600'>{platform}</span></h1>
               </div>
               <div className="mx-auto max-w-7xl px-4 sm:px-6 md:px-8">
                 {/* Replace with your content */}
