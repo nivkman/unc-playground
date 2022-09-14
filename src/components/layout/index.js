@@ -108,17 +108,17 @@ export default function Layout({content, platform}) {
                     </nav>
                   </div>
                   <div className="flex flex-shrink-0 bg-gray-700 p-4">
-                    <a href="#" className="group block flex-shrink-0">
+                    <a href="https://github.com/nivkman" target="_blank" className="group block flex-shrink-0">
                       <div className="flex items-center">
                         <div>
                           <img
                             className="inline-block h-10 w-10 rounded-full"
-                            src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                            src="https://avatars.githubusercontent.com/u/23408324?v=4"
                             alt=""
                           />
                         </div>
                         <div className="ml-3">
-                          <p className="text-base font-medium text-white">Tom Cook</p>
+                          <p className="text-base font-medium text-white">Niv Kaufman</p>
                           <p className="text-sm font-medium text-gray-400 group-hover:text-gray-300">View profile</p>
                         </div>
                       </div>
@@ -175,17 +175,17 @@ export default function Layout({content, platform}) {
               </nav>
             </div>
             <div className="flex flex-shrink-0 bg-gray-700 p-4">
-              <a href="#" className="group block w-full flex-shrink-0">
+              <a href="https://github.com/nivkman" target="_blank" className="group block w-full flex-shrink-0">
                 <div className="flex items-center">
                   <div>
                     <img
                       className="inline-block h-9 w-9 rounded-full"
-                      src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                      src="https://avatars.githubusercontent.com/u/23408324?v=4"
                       alt=""
                     />
                   </div>
                   <div className="ml-3">
-                    <p className="text-sm font-medium text-white">Tom Cook</p>
+                    <p className="text-sm font-medium text-white">Niv Kaufman</p>
                     <p className="text-xs font-medium text-gray-300 group-hover:text-gray-200">View profile</p>
                   </div>
                 </div>
@@ -205,18 +205,16 @@ export default function Layout({content, platform}) {
             </button>
           </div>
           <main className="flex-1">
-            <div className="py-6">
+            <div className="py-20">
               <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
                 <h1 className="text-2xl font-semibold text-gray-900">Send Notification to <span className='text-indigo-600'>{platform}</span></h1>
               </div>
               <div className="mx-auto max-w-7xl px-4 sm:px-6 md:px-8">
-                {/* Replace with your content */}
                 <div className="py-4">
-                  <div className="h-96 rounded-lg border-4 border-dashed border-gray-200">
+                  <div>
                     {content}
                   </div>
                 </div>
-                {/* /End replace */}
               </div>
             </div>
           </main>
